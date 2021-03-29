@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example.danila_miasniankin'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.aeonbits.owner', name: 'owner-java8', version: '1.0.12'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    implementation group: 'io.cucumber', name: 'cucumber-spring', version: '6.10.2'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.5'
+    implementation group: 'org.springframework', name: 'spring-core', version: '5.3.5'
+    implementation group: 'org.springframework', name: 'spring-beans', version: '5.3.5'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-beta-1'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.0-M1'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.2'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.2'
+    testImplementation group: 'org.springframework', name: 'spring-test', version: '5.3.5'
+    implementation group: 'io.vavr', name: 'vavr', version: '0.10.3'
+}
